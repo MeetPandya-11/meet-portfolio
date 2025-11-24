@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meet Pandya | Data & Business Analyst Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-logo">MEET<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero-left">
+        <p class="hero-tag">📊 Data & Business Analytics • ML • Dashboards</p>
+        <h1>Hi, I'm <span>Meet Pandya</span></h1>
+        <h2>Aspiring Data Analyst & Business Analyst</h2>
+
+        <p class="hero-subtext">
+          I transform messy, real-world data into clear, actionable insights using SQL, Python,
+          Machine Learning and modern BI tools. I love solving problems in sports, aviation
+          and everyday products with data-driven thinking.
+        </p>
+
+        <div class="hero-actions">
+          <a href="Meet_Pandya_Resume.pdf" class="btn primary" target="_blank">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn ghost">
+            <i class="fa-solid fa-diagram-project"></i> View Projects
+          </a>
+        </div>
+
+        <div class="hero-contact-mini">
+          <span><i class="fa-solid fa-phone"></i> +91 9079173001</span>
+          <span><i class="fa-solid fa-envelope"></i> pandyameet1702@gmail.com</span>
+          <span><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-wrapper">
+          <div class="photo-ring">
+            <!-- Put profile.jpg in same folder -->
+            <img src="profile.jpg" alt="Meet Pandya" />
+          </div>
+          <div class="photo-badge">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+              <p>Data-Driven</p>
+              <span>Analytics • ML • Dashboards</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Skill Snapshot</h3>
+          <canvas id="skillChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Who I am & what I love building</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a final-year <strong>B.Tech Computer Science</strong> student at
+            <strong>Dayananda Sagar University</strong> with a strong focus on
+            <strong>Data Analytics, Machine Learning and Business Intelligence</strong>.
+          </p>
+          <p>
+            I enjoy taking raw datasets, cleaning and exploring them using
+            <strong>Python (Pandas, NumPy)</strong> and <strong>SQL</strong>, then
+            turning them into dashboards in <strong>Power BI / Tableau</strong> that
+            help stakeholders see the story behind the numbers.
+          </p>
+          <p>
+            My projects range from <strong>real-time fall detection in sports</strong>,
+            to <strong>smart food inventory management</strong>, to
+            <strong>aviation analytics for flight performance and maintenance</strong>.
+            I love shipping end-to-end solutions — from data preprocessing to
+            beautiful front-end experiences.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <div class="about-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>Dayananda Sagar University, Bengaluru</p>
+            <p class="muted">B.Tech CSE · 2022 – 2026</p>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Achievements</h3>
+            <p>2nd Runner Up – Alliance CodeSangram (100+ teams)</p>
+            <p>Runner Up – Magnovite 2023 (Christ University)</p>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Tech Stack</h3>
+            <p class="muted">
+              Python · C · C++ · Java · HTML · CSS · JavaScript · React · SQL ·
+              Flask · TensorFlow · PyTorch · OpenCV · Scikit-learn · LangChain
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="section-header">
+        <h2>Skills Dashboard</h2>
+        <p>Core analytics, ML and engineering skills</p>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-left">
+          <h3>Analytics & ML</h3>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>SQL (Queries, Joins, Aggregations)</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="92"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Python (Pandas, NumPy, Matplotlib)</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Machine Learning & Object Detection</span>
+              <span class="skill-percent">86%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="86"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Power BI / Tableau / Looker Studio</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Web Development (HTML, CSS, JS, React)</span>
+              <span class="skill-percent">84%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="84"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <h3>Tools & Frameworks</h3>
+          <div class="tool-grid">
+            <div class="tool-card"><i class="fa-solid fa-database"></i> MySQL / SQL</div>
+            <div class="tool-card"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="tool-card"><i class="fa-solid fa-brain"></i> TensorFlow</div>
+            <div class="tool-card"><i class="fa-solid fa-network-wired"></i> PyTorch</div>
+            <div class="tool-card"><i class="fa-solid fa-camera"></i> OpenCV</div>
+            <div class="tool-card"><i class="fa-solid fa-robot"></i> LangChain</div>
+            <div class="tool-card"><i class="fa-solid fa-chart-column"></i> Power BI</div>
+            <div class="tool-card"><i class="fa-solid fa-chart-pie"></i> Tableau</div>
+          </div>
+
+          <h4>Soft Skills</h4>
+          <div class="soft-skills">
+            <span class="soft-chip">Analytical Thinking</span>
+            <span class="soft-chip">Problem Solving</span>
+            <span class="soft-chip">Attention to Detail</span>
+            <span class="soft-chip">Communication</span>
+            <span class="soft-chip">Team Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Hands-on work in data, AI, and product building</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- FAIRPLAYAI -->
+        <article class="project-card">
+          <div class="project-tag">Sports Analytics · ML</div>
+          <h3>FAIRPLAYAI – Real-Time Fall Detection for Sports</h3>
+          <p>
+            Developed a real-time fall detection system for athletes using pose estimation and
+            motion analysis on 200+ sports video clips and 10,000+ frames.
+          </p>
+          <ul>
+            <li>Recognized and classified 10+ human action types in athletic scenarios.</li>
+            <li>Optimized the model to run with &lt;100ms latency for near real-time use.</li>
+            <li>Used Dense + Dropout layers to reduce overfitting by ~30%.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">Python · ML · OpenCV · Pose Estimation</span>
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub (add link)
+            </a>
+          </div>
+        </article>
+
+        <!-- Senior Companion -->
+        <article class="project-card">
+          <div class="project-tag">LLM · Web App</div>
+          <h3>Senior Companion – AI Web Application for 65+ Users</h3>
+          <p>
+            Engineered an accessible web app to reduce social isolation for seniors by providing
+            24/7 AI-based conversational support.
+          </p>
+          <ul>
+            <li>Built responsive front end with clean UI for older users.</li>
+            <li>Integrated Gemini API for context-aware conversations across 5+ user personas.</li>
+            <li>Implemented features like adjustable text size and high-contrast modes.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">React · JS · LLMs · Gemini API</span>
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub (add link)
+            </a>
+          </div>
+        </article>
+
+        <!-- EatWise -->
+        <article class="project-card">
+          <div class="project-tag">Product · Web</div>
+          <h3>EatWise – Smart Food Inventory Management System</h3>
+          <p>
+            Built “EatWise”, a responsive food inventory system that tracks 50+ items per session,
+            focuses on expiry dates and reduces household food waste.
+          </p>
+          <ul>
+            <li>Implemented login, dashboard and QR-based scanning for items.</li>
+            <li>Designed a modern UI using CSS variables with &lt;1.5s load time.</li>
+            <li>Added real-time analytics for expiring items and inventory stats.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">HTML5 · CSS3 · JavaScript</span>
+            <a href="https://github.com/MeetPandya-11" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> Repo on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- Aircraft Systems Analytics -->
+        <article class="project-card">
+          <div class="project-tag">Aviation Analytics</div>
+          <h3>Aircraft Systems Data Analytics Dashboard</h3>
+          <p>
+            Analyzed aircraft electrical system data to monitor subsystem voltage, temperature
+            and health metrics for better operational decisions.
+          </p>
+          <ul>
+            <li>Cleaned and processed time-series logs using SQL and Python.</li>
+            <li>Designed Power BI dashboards to track KPIs and system performance.</li>
+            <li>Supported early detection of abnormal behaviour in key subsystems.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">SQL · Python · Power BI</span>
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub (add link)
+            </a>
+          </div>
+        </article>
+
+        <!-- Flight Efficiency -->
+        <article class="project-card">
+          <div class="project-tag">Optimization · ML</div>
+          <h3>Flight Efficiency Optimization – Aviation Analytics</h3>
+          <p>
+            Processed Flight Data Recorder logs to evaluate fuel efficiency and flight patterns,
+            then used ML models to identify inefficiencies.
+          </p>
+          <ul>
+            <li>Built regression & clustering models on flight metrics.</li>
+            <li>Created Tableau dashboards for fuel and performance KPIs.</li>
+            <li>Generated data-backed suggestions to improve routes and operations.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">Python · Scikit-learn · SQL · Tableau</span>
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub (add link)
+            </a>
+          </div>
+        </article>
+
+        <!-- Maintenance Anomaly -->
+        <article class="project-card">
+          <div class="project-tag">Predictive Maintenance</div>
+          <h3>Maintenance Anomaly Detection System</h3>
+          <p>
+            Built predictive models to spot anomalies in electrical load and temperature readings
+            to support proactive aircraft maintenance.
+          </p>
+          <ul>
+            <li>Performed EDA to understand failure patterns and risk.</li>
+            <li>Visualized anomaly scores and probabilities in BI dashboards.</li>
+            <li>Enabled early-warning alerts to reduce downtime risk.</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-tools">Python · Matplotlib · Power BI · Looker Studio</span>
+            <a href="#" class="project-link" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub (add link)
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="section-header">
+        <h2>Journey</h2>
+        <p>How I’ve grown as an analyst & engineer</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">Aug 2025 – Oct 2025</p>
+            <h3>Data Analytics Intern – NuMinds AI</h3>
+            <p class="timeline-location">Remote / Bengaluru</p>
+            <ul>
+              <li>Worked with Python and SQL to clean and process multi-source datasets.</li>
+              <li>Built BI dashboards to track KPIs and key business metrics.</li>
+              <li>Collaborated with cross-functional teams to deliver insights.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">Aug 2022 – Aug 2026</p>
+            <h3>B.Tech – Computer Science & Engineering</h3>
+            <p class="timeline-location">Dayananda Sagar University</p>
+            <ul>
+              <li>Coursework: ML, DSA, DBMS, OS, CN and more.</li>
+              <li>Built multiple ML, AI and web projects alongside academics.</li>
+              <li>Actively participated in hackathons and tech events.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2023 – 2025</p>
+            <h3>Hackathons & Achievements</h3>
+            <ul>
+              <li>2nd Runner Up – Alliance CodeSangram Hackathon.</li>
+              <li>Runner Up – Magnovite 2023, Christ University.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Reach out for opportunities, collaborations, or just to talk data</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Direct Contact</h3>
+          <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +91 9079173001</p>
+          <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong>
+            <a href="mailto:pandyameet1702@gmail.com">pandyameet1702@gmail.com</a>
+          </p>
+          <p><i class="fa-solid fa-location-dot"></i> Bengaluru, India</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Profiles</h3>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/meet-pandya-853096358/" target="_blank" class="social-btn">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/MeetPandya-11" target="_blank" class="social-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+          <p class="muted">
+            I’m open to internships, full-time roles and collaboration on analytics / ML projects.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Meet Pandya · Data & Business Analytics Portfolio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
